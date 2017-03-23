@@ -1,0 +1,50 @@
+{
+  "name": "react-pendifier",
+  "version": "0.0.1",
+  "description": "Make your application look nice when its loading!",
+  "main": "lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepublish": "npm run build",
+    "lint": "tslint 'src/**/*.{ts,tsx}'",
+    "test": "jest --config jest/test.config.json",
+    "test:watch": "jest --config jest/test.config.json --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamiecopeland/react-pendifier.git"
+  },
+  "keywords": [
+    "React"
+  ],
+  "authors": [
+    "Jamie Copeland",
+    "Alex Rieux"
+  ],
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jamiecopeland/react-pendifier/issues"
+  },
+  "homepage": "https://github.com/jamiecopeland/react-pendifier#readme",
+  "dependencies": {
+    "react": "^15.3.2"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.7.1",
+    "@types/jest": "^19.2.2",
+    "@types/react": "^15.0.0",
+    "enzyme": "^2.7.0",
+    "jest": "^18.1.0",
+    "ts-jest": "^19.0.2",
+    "tslint": "^4.2.0",
+    "tslint-eslint-rules": "^2.2.1",
+    "tslint-microsoft-contrib": "^2.0.14",
+    "tslint-react": "^2.5.0",
+    "typescript": "^2.2.1"
+  }
+}
