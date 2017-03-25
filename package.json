@@ -32,18 +32,18 @@
   },
   "homepage": "https://github.com/jamiecopeland/react-pendifier#readme",
   "dependencies": {
-    "react": "^15.3.2"
+    "react": "^15.4.2"
   },
   "devDependencies": {
-    "@types/enzyme": "^2.7.1",
+    "@types/enzyme": "^2.7.6",
     "@types/jest": "^19.2.2",
-    "@types/react": "^15.0.0",
-    "enzyme": "^2.7.0",
-    "jest": "^18.1.0",
-    "ts-jest": "^19.0.2",
-    "tslint": "^4.2.0",
-    "tslint-eslint-rules": "^2.2.1",
-    "tslint-microsoft-contrib": "^2.0.14",
+    "@types/react": "^15.0.20",
+    "enzyme": "^2.8.0",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.4",
+    "tslint": "^4.5.1",
+    "tslint-eslint-rules": "^3.5.1",
+    "tslint-microsoft-contrib": "^4.0.1",
     "tslint-react": "^2.5.0",
     "typescript": "^2.2.1"
   }
