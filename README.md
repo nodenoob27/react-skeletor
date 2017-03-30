@@ -1,5 +1,7 @@
 # React-pendifier
 
+![React-pendifier gif](/react-pendifier.gif)
+
 ## Skeleton loading for your UI in React.
 Immediately show to your user where the content gonna be displayed by first rendering animated grey blocks.
 
