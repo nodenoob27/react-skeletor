@@ -1,15 +1,30 @@
-# React-skeletor
+# React Skeletor
 
 ![React-skeletor gif](/react-skeletor.gif)
 
-## Skeleton loading for your UI in React.
-Immediately show to your user where the content gonna be displayed by first rendering animated grey blocks.
+## Skeleton preview for React components
+
+Display a skeleton preview of your application's content before it's loaded
 
 ### Basic usage
 
-1. Wrap your component with the `createSkeletonProvider` high order component. This adds the pending status and style into the context.
+1. Install via npm
+
+```
+npm install react-skeletor
+```
+
+or yarn
+
+```
+yarn add react-skeletor
+```
+
+2. Wrap your component (often a container) with the `createSkeletonProvider` high order component. This adds the pending status and style into the [context](https://facebook.github.io/react/docs/context.html).
 
 ```jsx
+// UserDetailPage.js
+
 import { createSkeltonProvider } from 'react-skeletor';
 
 const UserDetailPage = ({ user }) => (
@@ -21,19 +36,20 @@ const UserDetailPage = ({ user }) => (
 )
 
 export default createSkeltonProvider(
+  // Dummy data with a similar shape to your component's data
   {
-    // Some dummy data with a similar shape to
-    firstName: 'Darth',
-    lastName: 'Vader'
+    firstName: '_____',
+    lastName: '________'
   },
-  // Predicate that specify what make your UI loading
+  // Predicate specifying whether or not your data is loaded
   ({ user }) => user === undefined
 )(UserDetailPage);
 ```
 
-2. Use a skeleton element to magically style your component when data is pending with zero effort!
+3. Use a skeleton element to magically style your component when data is pending with zero effort!
 
 ```jsx
+// NameCard.js
 
 import { elements as sk } from 'react-skeletor';
 
