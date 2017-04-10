@@ -1,41 +1,51 @@
-# React-pendifier
+# React-skeletor
 
-![React-pendifier gif](/react-pendifier.gif)
+![React-skeletor gif](/react-skeletor.gif)
 
 ## Skeleton loading for your UI in React.
 Immediately show to your user where the content gonna be displayed by first rendering animated grey blocks.
 
-### How it works
+### Basic usage
 
-First you need the `dummify` high order component which gonna inject some dummy data to your component and set what condition define your loading state accross your components.
-
-Secondly you need either `toglify` or `pendify` to catch the loading state and style your component accordingly.
-
-### How to start
+1. Wrap your component with the `createSkeletonProvider` high order component. This adds the pending status and style into the context.
 
 ```jsx
-import { dummify } from 'react-pendifier';
+import { createSkeltonProvider } from 'react-skeletor';
 
-dummify(
+const UserDetailPage = ({ user }) => (
+  <div>
+    ...
+    <NameCard user={user} />
+    ...
+  </div>
+)
+
+export default createSkeltonProvider(
   {
-    // Some dummy data, should have the same shape as the data you receive into your component
+    // Some dummy data with a similar shape to
+    firstName: 'Darth',
+    lastName: 'Vader'
   },
   // Predicate that specify what make your UI loading
-  ({ someProp }) => someProp === something
-)(SomeComponent);
+  ({ user }) => user === undefined
+)(UserDetailPage);
 ```
 
-Later in your lower DOM tree:
+2. Use a skeleton element to magically style your component when data is pending with zero effort!
 
 ```jsx
 
-import { toglify } from 'react-pendifier';
+import { elements as sk } from 'react-skeletor';
 
-const Title = ({ text, style }) => <h1 style={style}>{ text }</h1>
+const NameCard = ({ firstName, lastName }) => (
+  <div>
+    <sk.h1 style={style}>{ firstName }</sk.h1>
+    <sk.h2 style={style}>{ lastName }</sk.h2>
+  </div>
+)
 
-const SkeletonTitle = toglify(Title);
+export default NameCard;
 
-() => <SkeletonTitle style={titleStyle} text="Some title here"/>
 ```
 
 ## TODO
