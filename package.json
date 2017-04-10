@@ -9,9 +9,9 @@
   "typings": "lib/index.d.ts",
   "scripts": {
     "clean": "rm -rf ./lib",
-    "build": "npm run clean && tsc",
-    "build:watch": "npm run clean && tsc -w",
-    "prepublish": "npm run build",
+    "build": "tsc",
+    "build:watch": "tsc -w",
+    "prepublish": "npm run clean && npm run build",
     "lint": "tslint 'src/**/*.{ts,tsx}'",
     "test": "jest --config jest/test.config.json",
     "test:watch": "jest --config jest/test.config.json --watch"
