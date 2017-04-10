@@ -37,3 +37,11 @@ const SkeletonTitle = toglify(Title);
 
 () => <SkeletonTitle style={titleStyle} text="Some title here"/>
 ```
+
+## TODO
+
+* Add aria tags
+* Add remaining HTML tags
+* Add tests
+* Add css class based example
+* Add documentation
