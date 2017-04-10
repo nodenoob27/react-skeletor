@@ -1,5 +1,5 @@
 {
-  "name": "react-pendifier",
+  "name": "react-skeletor",
   "version": "0.0.1",
   "description": "Make your application look nice when its loading!",
   "main": "lib/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jamiecopeland/react-pendifier.git"
+    "url": "git+https://github.com/jamiecopeland/react-skeletor.git"
   },
   "keywords": [
     "React"
@@ -29,9 +29,9 @@
   ],
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/jamiecopeland/react-pendifier/issues"
+    "url": "https://github.com/jamiecopeland/react-skeletor/issues"
   },
-  "homepage": "https://github.com/jamiecopeland/react-pendifier#readme",
+  "homepage": "https://github.com/jamiecopeland/react-skeletor#readme",
   "dependencies": {
     "react": "^15.4.2"
   },
