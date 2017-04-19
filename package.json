@@ -33,14 +33,15 @@
   },
   "homepage": "https://github.com/jamiecopeland/react-skeletor#readme",
   "dependencies": {
-    "react": "^15.4.2"
+    "react": "^15.5.4"
   },
   "devDependencies": {
     "@types/enzyme": "^2.7.6",
     "@types/jest": "^19.2.2",
-    "@types/react": "^15.0.20",
-    "enzyme": "^2.8.0",
+    "enzyme": "^2.8.2",
     "jest": "^19.0.2",
+    "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.5.4",
     "ts-jest": "^19.0.4",
     "tslint": "^4.5.1",
     "tslint-eslint-rules": "^3.5.1",

@@ -1,5 +1,7 @@
 # React Skeletor
 
+***WARNING: This package is currenly under development with a frequently changing API and should be considered pre-alpha.***
+
 ![React-skeletor gif](/react-skeletor.gif)
 
 ## Skeleton preview for React components
@@ -69,5 +71,10 @@ export default NameCard;
 * Add aria tags
 * Add remaining HTML tags
 * Add tests
-* Add css class based example
 * Add documentation
+
+
+## Options
+
+1. Kinda gross pendingProps and fullProps props that completely changes the way components are instantiated and makes for possible double passing of stuff - Can't have union types as props to simulate pattern matching/overloading :-(
+2. function that maps pending props to full props, but this will need a dirty exclamation mark if any of the props flip from optional of mandatory
